@@ -9,7 +9,6 @@
 - ✏️ Edit existing todos
 - 🗑️ Delete unwanted tasks
 - ☑️ Mark todos as complete/incomplete
-- 📱 Fully responsive design
 - 🎨 Clean, modern UI with Tailwind CSS
 
 ## 🛠️ Tech Stack
@@ -17,28 +16,17 @@
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB with Mongoose
 - **Frontend:** EJS templating, Tailwind CSS
-- **Environment:** dotenv for configuration
 
 ## 📦 Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd TodoListBackendProject
+   git clone https://github.com/kaival775/Todo-List-Backend-Project
    ```
 
 2. **Install dependencies**
    ```bash
    npm install
-   ```
-
-3. **Set up environment variables**
-   - Create a `.env` file in the root directory
-   - Add the following variables:
-   ```env
-   PORT=3000
-   MONGODB_URI=mongodb://localhost:27017/todolist
-   NODE_ENV=development
    ```
 
 4. **Start MongoDB**
@@ -94,19 +82,16 @@ TodoListBackendProject/
 - **Clean Design:** Minimalist interface with proper spacing
 - **Hover Effects:** Interactive buttons with smooth transitions
 - **Visual Feedback:** Different styles for completed vs pending tasks
-- **Responsive Layout:** Works on desktop, tablet, and mobile devices
 
 ## 📚 Learning Objectives
 
 This project was created for practice and covers:
 
-- ✨ Full-stack web development
 - 🗄️ MongoDB database operations
 - 🎭 EJS templating engine
 - 🎨 Tailwind CSS styling
 - 🔄 CRUD operations
 - 📡 RESTful API design
-- 🌐 Responsive web design
 
 ## 🤝 Contributing
 
