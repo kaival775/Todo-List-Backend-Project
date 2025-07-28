@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-2xl mx-auto py-8 px-4">
+        <!-- Header -->
+        <a href="/" class="text-blue-500">Go back</a>
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Update your Todo</h1>
+        </div>
+
+        <!-- Add Todo Form -->
+        <div class="bg-white rounded-lg shadow-sm border p-6 mb-6">
+            <form class="space-y-4" action="/update/<%= todo._id %>" method="post">
+                <div class="flex gap-4">
+                    <input 
+                        type="text" 
+                        value="<%= todo.todo %>"
+                        placeholder="Add a new todo..." 
+                        class="flex-1 px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required
+                        name="todo"
+                    >
+                   <input 
+                    name="due"
+                    value="<%= new Date(todo.due).toISOString().slice(0, 16) %>"
+                    type="datetime-local" 
+                    class="px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    >
+
+                </div>
+                <input 
+                    type="submit" 
+                    value=" Update Todo"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+                />
+            </form>
+        </div>
+        </body>
+</html>
