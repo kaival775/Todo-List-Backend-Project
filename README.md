@@ -53,7 +53,6 @@ TodoListBackendProject/
 │   └── todo.js          # MongoDB schema
 ├── views/
 │   └── index.ejs        # Main template
-├── .env                 # Environment variables
 ├── .gitignore          # Git ignore rules
 ├── server.js           # Main server file
 ├── package.json        # Dependencies
